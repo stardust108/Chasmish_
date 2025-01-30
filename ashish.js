@@ -1,21 +1,18 @@
-let currentPage = 1;
+document.querySelectorAll('.page').forEach((page, index) => {
+    page.addEventListener('click', function() {
+        this.classList.toggle('flipped');
+    });
+});
 
-function toggleClass(e, toggleClassName) {
-  if (e.className.includes(toggleClassName)) {
-    e.className = e.className.replace(" " + toggleClassName, "");
-  } else {
-    e.className += " " + toggleClassName;
-  }
+// Floating hearts effect
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '❤️';
+    heart.style.left = `${Math.random() * 100}%`;
+    heart.style.animationDuration = `${2 + Math.random() * 3}s`;
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 3000);
 }
 
-function movePage(e, page) {
-  if (page == currentPage) {
-    currentPage += 2;
-    toggleClass(e, "left-side");
-    toggleClass(e.nextElementSibling, "left-side");
-  } else if ((page = currentPage - 1)) {
-    currentPage -= 2;
-    toggleClass(e, "left-side");
-    toggleClass(e.previousElementSibling, "left-side");
-  }
-}
+setInterval(createHeart, 1000);
