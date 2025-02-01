@@ -1,6 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: none; /* Hide content by default */
+            padding: 50px;
+        }
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="desktopView">
+        <h1>Welcome to My Website</h1>
+        <p class="message">This site is best viewed on a desktop.</p>
+    </div>
+
+    <script>
+        function isDesktop() {
+            return window.innerWidth > 768; // Adjust breakpoint if needed
+        }
+
+        window.onload = function () {
+            if (isDesktop()) {
+                document.getElementById("desktopView").style.display = "block";
+            } else {
+                alert("Please visit this website on a desktop for the best experience.");
+            }
+        };
+    </script>
+</body>
+</html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book for Juhi💕</title>
