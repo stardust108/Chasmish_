@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 
 * {
   margin: 0;
@@ -8,11 +7,10 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   background: linear-gradient(135deg, #ff758c, #ff7eb3);
   font-family: "Lora", serif;
 }
@@ -24,99 +22,39 @@ body {
   perspective: 2000px;
 }
 
+/* Book Pages */
 .page {
   width: 450px;
   height: 600px;
   position: absolute;
   top: 0;
   right: 0;
-  background: #fff;
+  background: white;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  transition: transform 1s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
   transform-origin: right;
 }
 
-.page:hover {
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-}
-
-.page:nth-child(odd) {
-  background: linear-gradient(135deg, #fff6e0, #ffc3a0);
-}
-
-.page:nth-child(even) {
-  background: linear-gradient(135deg, #e3fdfd, #ffdde1);
-}
-
-/* Page Flip Animation */
-.page:nth-child(1) {
-  z-index: 5;
-  transform: rotateY(0deg);
-}
-
-.page:nth-child(2) {
-  z-index: 4;
-  transform: rotateY(-180deg);
-}
-
-.page:nth-child(3) {
-  z-index: 3;
-  transform: rotateY(-360deg);
-}
-
-.page:nth-child(4) {
-  z-index: 2;
-  transform: rotateY(-540deg);
-}
-
-.page:nth-child(5) {
-  z-index: 1;
-  transform: rotateY(-720deg);
-}
-
-/* Page Content Styling */
 .page-content {
   padding: 40px;
   font-size: 18px;
   color: #333;
 }
 
-.page-content h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #444;
+.page h1 {
+  text-align: center;
+  color: #ff4d6d;
 }
 
-.page-content p {
-  line-height: 1.6;
+/* Active Flip Class */
+.page.flipped {
+  transform: rotateY(-180deg);
 }
 
-/* Navigation Buttons */
-.nav-buttons {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-}
-
-.button {
-  background: #ff4d6d;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.button:hover {
-  background: #ff1e56;
-}
-
-/* Selection Highlight */
-::selection {
-  background: yellow;
-  color: black;
-}
+/* Ensure pages are stacked correctly */
+.page:nth-child(1) { z-index: 10; }
+.page:nth-child(2) { z-index: 9; }
+.page:nth-child(3) { z-index: 8; }
+.page:nth-child(4) { z-index: 7; }
+.page:nth-child(5) { z-index: 6; }
