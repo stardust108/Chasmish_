@@ -68,8 +68,10 @@ body {
 .page:nth-child(2) {
   padding: 5% 5% 4% 4%;
   transform-origin: 100% 50%;
-  transform: translatez(-2px) scalex(-1) translatex(100%);
-  background: #9bc8d6;
+  transform: translateZ(-2px) scaleX(-1) translateX(100%);
+  background: url('your-image.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire background */
+
 }
 
 .left-side:nth-child(2) {
