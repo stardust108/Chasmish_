@@ -14,12 +14,13 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  /* min-width: 900px;
-  min-height: 700px; */
+  min-width: 1024px; /* Ensures desktop width */
+  min-height: 700px; /* Keeps a reasonable height */
   background: linear-gradient(rgba(2, 29, 183, 0.963), rgb(146, 4, 96));
   position: relative;
+  overflow-x: hidden; /* Prevents horizontal scroll on mobile */
 }
 #botao1 {
   background: rgba(68, 166, 158, 0.406);
