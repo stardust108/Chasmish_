@@ -168,7 +168,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-11px);
-  background: #ccc;
+  background: #FFE5B4;
 }
 
 .left-side:nth-child(11) {
@@ -190,7 +190,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-13px);
-  background: #ccc;
+  background: #FFE5B4;
 }
 
 .left-side:nth-child(13) {
