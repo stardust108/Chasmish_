@@ -80,7 +80,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-3px);
-  background: #f5f5f5;
+  background: #FFDAB9;
 }
 
 .left-side:nth-child(3) {
@@ -91,7 +91,7 @@ body {
   padding: 5% 5% 4% 4%;
   transform-origin: 100% 50%;
   transform: translatez(-4px) scalex(-1) translatex(100%);
-  background: #f5f5f5;
+  background: #722F37;
 }
 
 .left-side:nth-child(4) {
@@ -102,7 +102,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-5px);
-  background: #f5f5f5;
+  background: #FF69B4;
 }
 
 .left-side:nth-child(5) {
@@ -113,7 +113,7 @@ body {
   padding: 5% 5% 4% 4%;
   transform-origin: 100% 50%;
   transform: translatez(-6px) scalex(-1) translatex(100%);
-  background: #f5f5f5;
+  background: #B76E79;
 }
 
 .left-side:nth-child(6) {
@@ -124,7 +124,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-7px);
-  background: #f5f5f5;
+  background: #B76E79;
 }
 
 .left-side:nth-child(7) {
@@ -135,7 +135,7 @@ body {
   padding: 5% 5% 4% 4%;
   transform-origin: 100% 50%;
   transform: translatez(-8px) scalex(-1) translatex(100%);
-  background: #f5f5f5;
+  background: #722F37;
 }
 
 .left-side:nth-child(8) {
@@ -146,7 +146,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-9px);
-  background: #f5f5f5;
+  background: #722F37;
 }
 
 .left-side:nth-child(9) {
@@ -168,7 +168,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-11px);
-  background: #ccc;
+  background: #722F37;
 }
 
 .left-side:nth-child(11) {
@@ -190,7 +190,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-13px);
-  background: #ccc;
+  background: #FFDAB9;
 }
 
 .left-side:nth-child(13) {
@@ -201,7 +201,7 @@ body {
   padding: 5% 5% 4% 4%;
   transform-origin: 100% 50%;
   transform: translatez(-14px) scalex(-1) translatex(100%);
-  background: #ccc;
+  background: #B76E79;
 }
 
 .left-side:nth-child(14) {
@@ -212,7 +212,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-15px);
-  background: #ccc;
+  background: #722F37;
 }
 
 .left-side:nth-child(15) {
