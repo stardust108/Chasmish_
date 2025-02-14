@@ -91,7 +91,7 @@ body {
   padding: 5% 5% 4% 4%;
   transform-origin: 100% 50%;
   transform: translatez(-4px) scalex(-1) translatex(100%);
-  background: #722F37;
+  background: #B76E79;
 }
 
 .left-side:nth-child(4) {
@@ -146,7 +146,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-9px);
-  background: #722F37;
+  background: #FFDAB9;
 }
 
 .left-side:nth-child(9) {
@@ -168,7 +168,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-11px);
-  background: #722F37;
+  background: #FFDAB9;
 }
 
 .left-side:nth-child(11) {
@@ -212,7 +212,7 @@ body {
   padding: 5% 4% 4% 5%;
   transform-origin: 0% 50%;
   transform: translatez(-15px);
-  background: #722F37;
+  background: #B76E79;
 }
 
 .left-side:nth-child(15) {
