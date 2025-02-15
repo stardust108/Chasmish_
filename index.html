@@ -1,50 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            display: none; /* Hide content by default */
-            padding: 50px;
-        }
-        .message {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container" id="desktopView">
-       
-    </div>
-
-    <script>
-        function isDesktop() {
-            return window.innerWidth > 768; // Adjust breakpoint if needed
-        }
-
-        window.onload = function () {
-            if (isDesktop()) {
-                document.getElementById("desktopView").style.display = "block";
-            } else {
-                alert("Please visit this website on a desktop for the best experience.");
-            }
-        };
-    </script>
-</body>
-</html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book for Juhi💕</title>
@@ -52,7 +8,7 @@
     <style>
         /* Background Animation */
         body {
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
             background-size: 400% 400%;
             animation: gradientBG 10s ease infinite;
             font-family: 'Poppins', sans-serif;
@@ -63,12 +19,27 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
 
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
+        }
+
+        /* Floating Love Emojis */
+        .emoji {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.8;
+            animation: float 5s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(-100px) rotate(20deg); opacity: 0.8; }
+            100% { transform: translateY(-200px) rotate(-20deg); opacity: 0; }
         }
 
         /* Container Styling */
@@ -80,6 +51,7 @@
             backdrop-filter: blur(10px);
             position: relative;
             max-width: 350px;
+            z-index: 10;
         }
 
         /* Animated Ribbon */
@@ -100,13 +72,6 @@
             100% { transform: rotate(-45deg) scale(1.1); }
         }
 
-        /* Text Styling */
-        p {
-            font-size: 18px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
         /* Glowing Button */
         .tag a {
             display: inline-block;
@@ -119,6 +84,7 @@
             border-radius: 50px;
             box-shadow: 0px 4px 15px rgba(255, 78, 120, 0.5);
             transition: 0.3s ease-in-out;
+            animation: pulse 1.5s infinite;
         }
 
         .tag a:hover {
@@ -126,9 +92,63 @@
             transform: scale(1.1);
             box-shadow: 0px 8px 20px rgba(255, 78, 120, 0.7);
         }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            color: #ff5e78;
+            opacity: 0.7;
+            animation: floatHearts 5s infinite ease-in-out;
+        }
+
+        @keyframes floatHearts {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            50% { transform: translateY(-50px) scale(1.2); opacity: 0.8; }
+            100% { transform: translateY(-100px) scale(1); opacity: 0; }
+        }
     </style>
 </head>
 <body>
+
+    <!-- Floating Emojis -->
+    <script>
+        function createEmojis() {
+            const emojis = ["💕", "❤️", "😍", "💖", "💗", "🥰"];
+            for (let i = 0; i < 20; i++) {
+                let emoji = document.createElement("div");
+                emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+                emoji.classList.add("emoji");
+                emoji.style.left = Math.random() * 100 + "vw";
+                emoji.style.top = Math.random() * 100 + "vh";
+                emoji.style.animationDuration = Math.random() * 3 + 2 + "s";
+                document.body.appendChild(emoji);
+            }
+        }
+        createEmojis();
+    </script>
+
+    <!-- Floating Hearts -->
+    <script>
+        function createHearts() {
+            for (let i = 0; i < 15; i++) {
+                let heart = document.createElement("div");
+                heart.innerText = "❤️";
+                heart.classList.add("heart");
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.animationDuration = Math.random() * 5 + 2 + "s";
+                document.body.appendChild(heart);
+            }
+        }
+        createHearts();
+    </script>
+
     <div class="container">
         <p>Motki, please click on this! I’ve made something special for you ❤️</p>
         <div class="ribbon"></div>
@@ -136,5 +156,6 @@
             <a href="book.html">Chasmish 🫀</a>
         </div>
     </div>
+
 </body>
 </html>
