@@ -161,12 +161,7 @@
     });
 </script></p>
         <div class="ribbon"></div>
-        <div class="tag">
-            <a href="book.html?word=<span class="dynamicWord"></span>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".dynamicWord").forEach(el => {
+        <div class="tag">            <a href="book.html?word=<span class="dynamicWord"></span><script>document.addEventListener("DOMContentLoaded", function () {document.querySelectorAll(".dynamicWord").forEach(el => {
             el.textContent = new URLSearchParams(window.location.search).get("word") || "default";
         });
     });
